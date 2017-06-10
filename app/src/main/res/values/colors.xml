@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary color of the app (shown in the app bar) -->
+    <color name="colorPrimary">#9C27B0</color>
+
+    <!-- Primary dark color of the app (shown in the status bar) -->
+    <color name="colorPrimaryDark">#7B1FA2</color>
+
+    <!-- Accent color of the app -->
+    <color name="colorAccent">#CDDC39</color>
+
+    <!-- Text color for the title of the bookItem -->
+    <color name="textColorBookLocation">#2B3D4D</color>
+
+    !-- Text color for the title of the bookItem -->
+    <color name="textColorBookDetails">#6200ea</color>
+</resources>

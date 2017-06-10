@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
+    <string name="app_name">Book List</string>
+
+    <!-- Text to display in the list when there are no bookItems [CHAR LIMIT=NONE] -->
+    <string name="no_books">No bookItems found.</string>
+
+    <!-- Error message when there is no internet connectivity [CHAR LIMIT=NONE] -->
+    <string name="no_internet_connection">No internet connection.</string>
+
+    <!-- Settings Menu Item [CHAR LIMIT=NONE] -->
+    <string name="settings_menu_item">Settings</string>
+    <!-- Settings Activity Title [CHAR LIMIT=NONE] -->
+    <string name="settings_title">Book Settings</string>
+
+    <!-- Strings For Minimum retailPrice Preference [CHAR LIMIT=30] -->
+    <string name="settings_title_label">Title</string>
+    <string name="settings_title_key" translatable="false">Title</string>
+    <string name="settings_title_default" translatable="false">0</string>
+
+    <!-- Strings For Order-By Preference [CHAR LIMIT=30] -->
+    <string name="settings_order_by_label">Order By</string>
+    <string name="settings_order_by_key" translatable="false">order_by</string>
+    <string name="settings_order_by_default" translatable="false">@string/settings_order_by_title_value</string>
+
+    <!-- Label for order-by retailPrice option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_title_label">Title</string>
+    <string name="settings_order_by_title_value" translatable="false">Title</string>
+
+    <!-- Label for order-by most recent option [CHAR LIMIT=20] -->
+    <string name="settings_order_by_most_recent_label">Most Recent</string>
+    <string name="settings_order_by_most_recent_value" translatable="false">time</string>
+
+    <string name="menu_search">Search</string>
+    <string name="action_settings">action_settings</string>
+    <string name="search_hint">Search</string>
+    <string name="search_result"></string>
+
+
+</resources>
