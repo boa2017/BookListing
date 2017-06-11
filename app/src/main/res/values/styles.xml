@@ -7,25 +7,95 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
-    <!--  Images -->
-    <style name="bookItemImage">
+    <style name="RelativesLayoutCommon">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="LinearSearch">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        </style>
+    <style name="EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColorHint">@color/textColor</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <style name="SearchButton">
+        <item name="android:layout_width">@dimen/search_button</item>
+        <item name="android:layout_height">@dimen/search_button</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_toRightOf">@id/editText</item>
+    </style>
+    <style name="Views">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="ListView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:divider">@color/colorPrimaryDark</item>
+        <item name="android:dividerHeight">2dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_below">@id/view</item>
+    </style>
+    <style name="BackgroundImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@drawable/books</item>
+        <item name="android:layout_below">@id/view</item>
+    </style>
+    <style name="ViewEmptyText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
         <item name="android:padding">16dp</item>
-        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Large</item>
+        <item name="android:textColor">@color/background</item>
     </style>
-
-    <style name="AppBaseTheme" parent="android:Theme.Light"></style>
-
-    <style name="Theme.MyCompatTheme" parent="@style/Theme.AppCompat.Light.DarkActionBar">
-        <item name="android:windowBackground">@color/winBackground</item>
-        <item name="android:actionBarStyle">@style/ActionBar</item>
-        <item name="actionBarStyle">@style/ActionBar</item>
-    </style>
-
-    <style name="ActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+    <style name="Title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">
+            @style/TextAppearance.AppCompat.Light.SearchResult.Title </item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginBottom">@dimen/activity_horizontal_margin</item>
         <item name="android:background">@color/background</item>
-        <item name="background">@color/background</item>
     </style>
-
-    <color name="winBackground">#98cb4a</color>
-    <color name="background">#f76d3c</color>
+    <style name="bookCover">
+        <item name="android:layout_width">@dimen/cover_width</item>
+        <item name="android:layout_height">@dimen/cover_height</item>
+        <item name="android:minHeight">@dimen/cover_height</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_marginBottom">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_below">@id/title</item>
+    </style>
+    <style name="Authors">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:layout_below">@id/title</item>
+        <item name="android:layout_toRightOf">@id/cover</item>
+    </style>
+    <style name="RelativeInfoBook">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/cover</item>
+        <item name="android:layout_below">@id/authors</item>
+    </style>
 </resources>

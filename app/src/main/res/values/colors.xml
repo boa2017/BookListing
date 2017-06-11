@@ -9,9 +9,7 @@
     <!-- Accent color of the app -->
     <color name="colorAccent">#CDDC39</color>
 
-    <!-- Text color for the title of the bookItem -->
-    <color name="textColorBookLocation">#2B3D4D</color>
+    <color name="textColor">#000000</color>
+    <color name="background">#c51162</color>
 
-    !-- Text color for the title of the bookItem -->
-    <color name="textColorBookDetails">#6200ea</color>
 </resources>

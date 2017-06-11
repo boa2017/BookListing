@@ -1,4 +1,4 @@
-package com.example.android.booklist;
+package com.example.android.booklisting;
 
 import org.junit.Test;
 

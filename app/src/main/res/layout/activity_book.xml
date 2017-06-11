@@ -1,34 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!-- Layout for a list of bookItems -->
-
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/RelativesLayoutCommon"
+    tools:context="com.example.android.booklisting.BookActivity">
 
-    <ListView
-        android:id="@+id/list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:divider="@null"
-        android:dividerHeight="0dp"
-        android:orientation="vertical" />
+    <LinearLayout
+        android:id="@+id/searcher"
+        style="@style/LinearSearch">
 
-    <!-- Empty view is only visible when the list has no items. -->
-    <TextView
-        android:id="@+id/empty_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textAppearance="?android:textAppearanceMedium" />
+        <EditText
+            android:id="@+id/editText"
+            style="@style/EditText"
+            android:hint="@string/your_search" />
 
-    <!-- Loading indicator for user feedback between queries to Google Books API -->
+        <Button
+            android:id="@+id/search_button"
+            style="@style/SearchButton"
+            android:background="@drawable/ic_action_search" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view"
+        style="@style/Views"
+        android:layout_below="@id/searcher" />
+
     <ProgressBar
-        android:id="@+id/loading_indicator"
+        android:id="@+id/loading_spinner"
         style="@style/Widget.AppCompat.ProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true" />
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
 
+    <ListView
+        android:id="@+id/list"
+        style="@style/ListView" />
+
+    <ImageView
+        android:id="@+id/search_image"
+        style="@style/BackgroundImage" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        style="@style/ViewEmptyText" />
 </RelativeLayout>
+
+
 
