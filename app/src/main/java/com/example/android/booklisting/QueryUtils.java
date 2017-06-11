@@ -28,7 +28,7 @@ public final class QueryUtils {
     private QueryUtils() {
     }
 
-    public static List<Book> getDataBook (String requestUrl) {
+    public static List<Book> getDataBook(String requestUrl) {
         URL url = createUrl(requestUrl);
 
         String jsonResponse = null;
@@ -123,12 +123,18 @@ public final class QueryUtils {
                 JSONArray authors = bookAttributes.getJSONArray("authors");
                 String authors1 = "";
                 for (int x = 0; x < authors.length(); x++) {
-                    authors1 = authors1.concat(authors.getString(x) + "\n");
+                    if (authors.getString(x).trim().equals("")) {
+                    } else {
+                        authors1 = authors1.concat(authors.getString(x) + "\n");
+                    }
                 }
                 String web = bookAttributes.getString("canonicalVolumeLink");
 
-                Book currentBook = new Book(imgUri, title, authors1, web);
-                bookList.add(currentBook);
+                if (title.equals("") || authors1.equals("")) {
+                } else {
+                    Book currentBook = new Book(imgUri, title, authors1, web);
+                    bookList.add(currentBook);
+                }
             }
         } catch (JSONException e) {
 

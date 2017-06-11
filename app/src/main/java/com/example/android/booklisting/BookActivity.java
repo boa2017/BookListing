@@ -23,7 +23,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class BookActivity extends AppCompatActivity {
 
-private int SEARCH_GOOGLE_BOOK = R.string.api_book_google;
+    private int SEARCH_GOOGLE_BOOK = R.string.api_book_google;
 private BookAdapter adapter;
 private EditText editText;
 private ProgressBar progressBar;
